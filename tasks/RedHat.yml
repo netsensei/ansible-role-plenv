@@ -1,0 +1,12 @@
+- name: install dependencies package - RedHat
+  yum:
+    name: "{{ packages }}"
+  vars:
+    packages:
+      - make
+      - gcc
+      - git-all
+      - wget
+      - curl
+      - patch
+      - sudo
